@@ -3,22 +3,22 @@
     {
       "title":"The Shawshank Redemption",
       "director":{
-        "firstName":"Frank",
+        "first-name":"Frank",
         "lastName":"Darabont"
       },
       "year":1994,
       "genre":"DRAMA",
       "actors":[
         {
-          "firstName":"Tim",
+          "first-name":"Tim",
           "lastName":"Robbins"
         },
         {
-          "firstName":"Morgan",
+          "first-name":"Morgan",
           "lastName":"Freeman"
         },
         {
-          "firstName":"Bob",
+          "first-name":"Bob",
           "lastName":"Gunton"
         }
       ]
@@ -26,22 +26,22 @@
     {
       "title":"Seven",
       "director":{
-        "firstName":"David",
+        "first-name":"David",
         "lastName":"Fincher"
       },
       "genre":"THRILLER",
       "year":1995,
       "actors":[
         {
-          "firstName":"Morgan",
+          "first-name":"Morgan",
           "lastName":"Freeman"
         },
         {
-          "firstName":"Brad",
+          "first-name":"Brad",
           "lastName":"Pitt"
         },
         {
-          "firstName":"Gwyneth",
+          "first-name":"Gwyneth",
           "lastName":"Paltrow"
         }
       ]
