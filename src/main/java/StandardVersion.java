@@ -1,5 +1,6 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import helpers.JsonHelper;
 import models.*;
 
 import java.io.File;
@@ -33,10 +34,7 @@ public class StandardVersion {
         }});
 
 
-        ObjectMapper objectMapper = new ObjectMapper();
-
-        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-        objectMapper.writeValue(new File("target/exported.json"), library);
+        new JsonHelper().serializeJson("target/exported.json", library);
 
         System.out.println(library);
     }
