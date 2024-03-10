@@ -21,6 +21,26 @@ public class Movie {
         this.genre = genre;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public Director getDirector() {
+        return director;
+    }
+
+    public ArrayList<Actor> getActors() {
+        return actors;
+    }
+
+    public Genre getGenre() {
+        return genre;
+    }
+
     @Override
     public String toString() {
         return "Movie:" +

@@ -1,10 +1,14 @@
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import models.*;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 
 
 public class StandardVersion {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         MovieLibrary library = new MovieLibrary(new ArrayList<>() {{
             add(new Movie(
                     "The Shawshank Redemption",
@@ -27,6 +31,12 @@ public class StandardVersion {
                         add(new Actor("Gwyneth", "Paltrow"));
                     }}));
         }});
+
+
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+        objectMapper.writeValue(new File("target/exported.json"), library);
 
         System.out.println(library);
     }

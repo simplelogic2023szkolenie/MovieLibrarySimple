@@ -14,6 +14,10 @@ public class MovieLibrary {
     }
 
 
+    public List<Movie> getMovies() {
+        return movies;
+    }
+
     @Override
     public String toString() {
         return "All movies in library:\r\n" + movies.stream().map(Movie::toString).collect(Collectors.joining());
